@@ -33,7 +33,7 @@ var twoSum = (nums, target) => {
     for (let i = 0; i < nums.length; i++) {
         indice1 = i
          numeroaBuscar = target - nums[i]        
-
+ 
         for (let j = i + 1; j < nums.length; j++) {
             indice2 = j
             console.log(i, j)

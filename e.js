@@ -702,38 +702,71 @@
 
 
 
-const aa = "(("
-//           ))
+// const aa = "(("
+// //           ))
 
 
-var isValid = function (s) {
-    let cierre = []
-    // if(s.length % 2 > 0){
-    //     console.log(false, (s.length % 2 ))
-    //     return false
-    // }
-    for (let i = 0; i < s.length; i++) {
+// var isValid = function (s) {
+//     let cierre = []
+//     // if(s.length % 2 > 0){
+//     //     console.log(false, (s.length % 2 ))
+//     //     return false
+//     // }
+//     for (let i = 0; i < s.length; i++) {
 
-        let ac = s[i]
-        console.log("ultimo cierre2", cierre, ac, i)
+//         let ac = s[i]
+//         console.log("ultimo cierre2", cierre, ac, i)
 
-        if (ac == "{") {
-            cierre.push("}")
-        } else if (ac == "[") {
-            cierre.push("]")
-        } else if (ac == "(") {
-            cierre.push(")")
-            
-        } else if (ac !== cierre.pop()) {
-            console.log(false, 213, ac)
-            return false
-        }
-    }
-    // if(cierre.length>0){
-    //     return false
-    // }
-    console.log(true)
-    return cierre.length === 0
-}
+//         if (ac == "{") {
+//             cierre.push("}")
+//         } else if (ac == "[") {
+//             cierre.push("]")
+//         } else if (ac == "(") {
+//             cierre.push(")")
 
-isValid(aa)
+//         } else if (ac !== cierre.pop()) {
+//             console.log(false, 213, ac)
+//             return false
+//         }
+//     }
+//     // if(cierre.length>0){
+//     //     return false
+//     // }
+//     console.log(true)
+//     return cierre.length === 0
+// }
+
+// isValid(aa)
+
+// a = [2, 7, 11, 15], b = 13
+
+// var twoSum = function (nums, target) {
+
+//     for (let i = 0; i < nums.length; i++) {
+//         let numero1 = nums[i]
+
+//         for (let j = i + 1; j < nums.length; j++) {
+//             let numero2 = nums[j]
+//             if (numero1 + numero2 === target) {
+//                 console.log([i, j])
+//                 return [i, j]
+//             }
+//         }
+//     }
+// };
+
+// twoSum(a, b)
+
+
+
+
+a = -121
+
+var isPalindrome = function (x) {
+    const b = x.toString()
+    const c = Array.from(b).toReversed().join("")
+    return b == c ? true : false
+    // console.log(b == c ? true : false)
+};
+
+isPalindrome(a)
